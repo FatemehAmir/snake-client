@@ -14,9 +14,15 @@ const connect = function() {
   conn.on("connect",() => {
     console.log(" successful")
     conn.write("Name: Fatemeh");
+    conn.write( "Move: down");
+    conn.write( "Move: up");
   } )
   return conn;
 }
+// setTimeout(( ) => {
+  
+ 
+// } , 4000);
 
 console.log('Connecting ...');
 //connect();
